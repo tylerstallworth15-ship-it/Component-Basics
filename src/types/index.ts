@@ -18,7 +18,7 @@ export interface user{
 }
 
 export interface UserProfileCardProps{
-    user: User;
+    user: user;
     showEmail?: boolean;
     showRole?: boolean;
     onEdit?: (userId: string) => void;
