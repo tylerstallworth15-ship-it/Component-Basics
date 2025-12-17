@@ -9,7 +9,7 @@ export interface AlertBoxProps{
     children?: ReactNode;
 }
 
-export interface user{
+export interface User{
     id:string;
     name:string;
     email:string;
@@ -18,7 +18,7 @@ export interface user{
 }
 
 export interface UserProfileCardProps{
-    user: user;
+    user: User;
     showEmail?: boolean;
     showRole?: boolean;
     onEdit?: (userId: string) => void;
@@ -30,9 +30,7 @@ export interface Product{
     name: string;
     price: number;
     description: string;
-
     imageUrl?: string;
-
     inStock: boolean;
 }
 
@@ -40,7 +38,7 @@ export interface ProductDisplayProps{
     product: Product;
     showDecription?: boolean;
     showStockStatus?: boolean;
-    onAddToCart?: (productId: string) => void
+    onAddToCart?: (productId: string) => void;
     children?: ReactNode;
 }
 
