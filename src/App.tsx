@@ -1,4 +1,3 @@
-import React from 'react';
 import { AlertBox } from './components/AlertBox/AlertBox';
 
 function App() {
